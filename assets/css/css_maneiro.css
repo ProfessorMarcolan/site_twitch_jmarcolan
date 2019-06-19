@@ -1,3 +1,5 @@
+/* Início header */
+
 .nav {
     background-color:#F7C948;
     height: 50px;
@@ -39,3 +41,66 @@ header {
     height: 500px;
     margin-top: 100px;
 }
+
+/* Fim header */
+
+/* Início footer */
+
+footer {
+    height: 250px;
+    background: #232323;
+}
+
+.footer_title {
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 16px;
+    text-transform: uppercase
+}
+
+.footer_email {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer_copy {
+    color: #fff;
+    text-align: center;
+}
+
+.footer_copy--italic {
+    font-style: italic;
+}
+
+.footer_nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer_logo {
+    font-size: 40px;
+    margin: 20px 50px 0 0;
+    color: #fff;
+    transition: all .3s;
+    padding-bottom: 10px
+}
+
+.fab.fa-github:hover {
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.fab.fa-discord:hover {
+    color: #8C9EFF;
+    transform: translateY(-5px);
+}
+
+.fab.fa-facebook-square:hover {
+   color: #3A589B;
+   transform: translateY(-5px);
+}
+
+/* Fim footer */
