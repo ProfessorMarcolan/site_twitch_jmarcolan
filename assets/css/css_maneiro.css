@@ -39,6 +39,8 @@
 	opacity: 0.8;
 }
 
+/* Fim header */
+
 #content {
 	display: flex;
 	justify-content: center;
@@ -56,25 +58,15 @@
 	background: #f3f3f3;
 }
 
-footer {
-	width: 100%;
-	height: 80px;
-	background: #222;
-	color: #fff;
-	text-align: center;
-}
-
-/* Fim header */
-
 /* Início footer */
 
 footer {
     height: 250px;
     background: #232323;
+    color: #fff;
 }
 
 .footer_title {
-    color: #fff;
     text-align: center;
     padding-top: 30px;
     font-size: 16px;
@@ -82,13 +74,11 @@ footer {
 }
 
 .footer_email {
-    color: #fff;
     text-align: center;
     padding-bottom: 10px;
 }
 
 .footer_copy {
-    color: #fff;
     text-align: center;
 }
 
@@ -110,19 +100,22 @@ footer {
     padding-bottom: 10px
 }
 
-.fab.fa-github:hover {
+.fa-github:hover,
+.fa-discord:hover,
+.fa-facebook-square:hover {
+    transform: translateY(-5px);
+}
+
+.fa-github:hover {
     color: #000;
-    transform: translateY(-5px);
 }
 
-.fab.fa-discord:hover {
+.fa-discord:hover {
     color: #8C9EFF;
-    transform: translateY(-5px);
-}
+}  
 
-.fab.fa-facebook-square:hover {
+.fa-facebook-square:hover {
    color: #3A589B;
-   transform: translateY(-5px);
 }
 
 /* Fim footer */
