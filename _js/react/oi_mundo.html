@@ -1,7 +1,25 @@
 ---
 layout: layoute_pagina_principal
-autor: joao
+autors:
+  - autor: joao
+  - autor: moser
+  - autor: rafiusk
+
+title: aula de react
 permalink: auka_1_react
 ---
 
 oi {{ page.autor }}
+
+<h2>Vamos discutir o jekyll</h2>
+
+Para podermos discutir sobre o jekyll baixe o jekyll
+
+
+autores
+<ul>
+    {% for autor in page.autors %}
+        <li>{{ autor.autor }}</li>
+      {% endfor %}
+    
+</ul>
