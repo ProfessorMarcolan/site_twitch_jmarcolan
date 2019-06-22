@@ -1,6 +1,6 @@
 ---
 layout : layoute_pagina_principal
-permalink: tag/javascript
+permalink: tag/git
 ---
 
 
@@ -9,10 +9,6 @@ permalink: tag/javascript
 
 <div id = "posts_react"></div>
 
-
-<h2> Posts sobre o javascript vanila</h2>
-
-<div id = "post_vanila"></div>
 
 
 <script>
@@ -64,7 +60,7 @@ permalink: tag/javascript
 
 componente_cartoes = new printando_na_tela( document.getElementById("posts_react"))
 
-fetch( "https://professormarcolan.github.io/site_twitch_jmarcolan/js/react/topicos.json")
+fetch( "https://professormarcolan.github.io/site_twitch_jmarcolan/git/topicos.json")
   .then((resp) => resp.json()) // Transform the data into json
   .then(function(data) {
     componente_cartoes.mostra_interface(data)
@@ -72,16 +68,6 @@ fetch( "https://professormarcolan.github.io/site_twitch_jmarcolan/js/react/topic
     })
 
 
-    componente_cartoes_vanila = new printando_na_tela( document.getElementById("post_vanila"))
-
-fetch( "https://professormarcolan.github.io/site_twitch_jmarcolan/js/vanila/topicos.json")
-  .then((resp) => resp.json()) // Transform the data into json
-  .then(function(data) {
-    componente_cartoes_vanila.mostra_interface(data)
-    // Create and append the li's to the ul
-    })
-
-    
 
 
 
