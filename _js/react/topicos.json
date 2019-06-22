@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "post": "como instalar o git e o tortoise git no computador",
+        "imagem_front": "",
+        "url": "oi_mundo",
+        "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 2,
+        "post": "como criar um repositório de trabalho eas ferramentas iniciais (commit, branch, merge)",
+        "imagem_front": "",
+        "url": "oi_mundo",
+        "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 3,
+        "post": "como criar um repositório de compartilhamento e usar as ferrmanteas iniciais (push , pull)",
+        "imagem_front": "",
+        "url": "oi_mundo",
+        "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 4,
+        "post": "como criar um repositório de compartilhamento no github e fluxo simplificado",
+        "imagem_front": "",
+        "url": "oi_mundo",
+        "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 5,
+        "post": "como contribuir em um repositório no github que não é seu",
+        "imagem_front": "",
+        "url": "oi_mundo",
+        "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 6,
+        "post": "como instalar o git e o tortoise git no computador",
+        "imagem_front": "",
+        "url": "oi_mundo",
+        "seo": ["git","github","como instalar o git"]
+    }
+]
+
+
