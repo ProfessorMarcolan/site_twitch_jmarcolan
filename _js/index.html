@@ -1,0 +1,53 @@
+---
+layout : layoute_pagina_principal
+
+---
+
+
+<div id = "posts"></div>
+
+<script>
+//   {
+//         "id": 1,
+//         "post": "como criar variaveis, tipos de variavies",
+//         "imagem_front": "",
+//         "url": "como_instalar_git",
+//         "seo": ["git","github","como instalar o git"]
+//     },
+
+    function estruturar_elemento(element){
+        let div = document.createElement("div")
+        div.innerHTML =`<div> <p> Isso deve se tornar um cartao
+        <p/>
+        <p><a href="${element.url}"> ${element.post} </a><p/>
+            <img src="${element.imagem_front}" alt="Minha Figura">	
+        </div>
+        `
+
+        return div
+    }
+
+function mostra_interface(data){
+
+    let lugar = document.getElementById("posts")
+    data.forEach(element => {
+       let elemento =  estruturar_elemento(element)
+
+        lugar.append(elemento)
+    });
+
+console.log(data)
+
+}
+
+
+
+fetch( "https://professormarcolan.github.io/site_twitch_jmarcolan/py/topicos.json")
+  .then((resp) => resp.json()) // Transform the data into json
+  .then(function(data) {
+    mostra_interface(data)
+    // Create and append the li's to the ul
+    })
+
+
+</script>
