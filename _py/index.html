@@ -1,0 +1,74 @@
+---
+layout : layoute_pagina_principal
+permalink: /site_twitch_jmarcolan/tag/python
+---
+
+
+
+<h2> Posts sobre o react</h2>
+
+<div id = "posts_react"></div>
+
+
+
+
+<script>
+//   {
+//         "id": 1,
+//         "post": "como criar variaveis, tipos de variavies",
+//         "imagem_front": "",
+//         "url": "como_instalar_git",
+//         "seo": ["git","github","como instalar o git"]
+//     },
+
+    class printando_na_tela{
+
+        constructor(element){
+            this.tag_ancora= element
+        }
+
+        // precisa melhorar a estrutura dos dados que v'ao para o div.innerHTML
+        estruturar_elemento(element){
+        let div = document.createElement("div")
+        div.innerHTML =`<div> <p> Isso deve se tornar um cartao
+        <p/>
+        <p><a href="${element.url}"> ${element.post} </a><p/>
+            <img src="${element.imagem_front}" alt="Minha Figura">	
+        </div>
+        `
+
+        return div
+    }
+
+     mostra_interface(data){
+
+    // let lugar = document.getElementById("posts")
+    data.forEach(element => {
+       let elemento =  this.estruturar_elemento(element)
+
+        this.tag_ancora.append(elemento)
+    });
+
+    console.log(data)
+    }
+
+
+
+
+    }
+
+
+
+componente_cartoes = new printando_na_tela( document.getElementById("posts_react"))
+
+fetch( "https://professormarcolan.github.io/site_twitch_jmarcolan/py/topicos.json")
+  .then((resp) => resp.json()) // Transform the data into json
+  .then(function(data) {
+    componente_cartoes.mostra_interface(data)
+    // Create and append the li's to the ul
+    })
+
+
+
+
+</script>
