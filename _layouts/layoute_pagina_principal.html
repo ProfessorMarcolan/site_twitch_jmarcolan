@@ -14,49 +14,213 @@
 </head>
 <body>
     <header>
-        <nav id="navbar" class="nav">
-            <input type="checkbox" id="nav-check" />
-			<div class="nav-header">
-				<div class="nav-title">
-					<a href="/">Prof Marcolan</a>
-			    </div>
-			</div>
-			<div class="nav-btn">
-				<label for="nav-check">
-					<span ></span>
-					<span ></span>
-                    <span ></span>
-				</label>
+        <nav style='background: #f7c948' class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" style='color: #222' href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+              aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" style='color: #222' href="#">
+                    Comunidade
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style='color: #222' href="#">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style='color: #222' id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                     Tags </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                    <a class="dropdown-item" style='color: #222' href="#">HTML/CSS</a>
+                    <a class="dropdown-item" style='color: #222' href="#">Javascript</a>
+                    <a class="dropdown-item" style='color: #222' href="#">Git</a>
+                    <a class="dropdown-item" style='color: #222' href="#">Python</a>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class='nav-links'>
-                <a href="/">Home</a>
-                <a href="#">HTML/CSS</a>
-                <a href="/tag/JavaScript">JavaScript</a>
-                <a href="/tag/git">Git</a>
-                <a href="/tag/python">Python</a>
-            </div>
-        </nav>
+          </nav>
 
         <div id="header-content" >
             <div class="header-bg">
-                <div class="title">
+                <div class="title container">
                     <h1>Professor Marcolan</h1>
+                    <p class='col-md-4 mb-4'>Teste</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="content">
-    <section>
-        <header>
-            <h1>{{ page.title }}</h1>
-        </header>
-        <article>
-            {{ content }}
-        </article>
-        <span>Autor</span>
-    </section>
-    </div>
+    <!--Main layout-->
+    <main class="mt-1 pt-1">
+        <div class="container">
+
+            <!--Section: Post-->
+            <section class="mt-4">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-8 mb-4">
+
+                        <!--Card-->
+                        <section class="my-5">
+
+                            <!-- Section heading -->
+                            <h2 class="h1-responsive font-weight-bold text-center my-5">Recent posts</h2>
+                            <!-- Section description -->
+                            <p class="text-center dark-grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          
+                            <!-- Grid row -->
+                            <div class="row">
+                          
+                              <!-- Grid column -->
+                              <div class="col-lg-5 col-xl-4">
+                          
+                                <!-- Featured image -->
+                                <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                                  <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image">
+                                  <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
+                                </div>
+                          
+                              </div>
+                              <!-- Grid column -->
+                          
+                              <!-- Grid column -->
+                              <div class="col-lg-7 col-xl-8">
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3"><strong>Title of the news</strong></h3>
+                                <!-- Excerpt -->
+                                <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                  quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                                  et aut officiis debitis cum soluta nobis est eligendi placeat facere aut rerum.</p>
+                                <!-- Post data -->
+                                <p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p>
+                                <!-- Read more button -->
+                                <a class="btn btn-primary btn-md">Read more</a>
+                          
+                              </div>
+                              <!-- Grid column -->
+                          
+                            </div>
+                            <!-- Grid row -->
+                          
+                            <hr class="my-5">
+                          
+                            <!-- Grid row -->
+                            <div class="row">
+                          
+                              <!-- Grid column -->
+                              <div class="col-lg-5 col-xl-4">
+                          
+                                <!-- Featured image -->
+                                <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                                  <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/31.jpg" alt="Sample image">
+                                  <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
+                                </div>
+                          
+                              </div>
+                              <!-- Grid column -->
+                          
+                              <!-- Grid column -->
+                              <div class="col-lg-7 col-xl-8">
+                          
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3"><strong>Title of the news</strong></h3>
+                                <!-- Excerpt -->
+                                <p class="dark-grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                  praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                                  cupiditate non provident et accusamus iusto odio dignissimos et dolorum fuga.</p>
+                                <!-- Post data -->
+                                <p>by <a class="font-weight-bold">Jessica Clark</a>, 16/04/2018</p>
+                                <!-- Read more button -->
+                                <a class="btn btn-primary btn-md">Read more</a>
+                          
+                              </div>
+                              <!-- Grid column -->
+                          
+                            </div>
+                            <!-- Grid row -->
+                          
+                          </section>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-4">
+
+                        
+                        <!--Card-->
+                        <div class="card mb-4 wow fadeIn">
+
+                            <div class="card-header">Related articles</div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder7.jpg" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <a href="">
+                                                <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
+                                            </a>
+                                            Cras sit amet nibh libero, in gravida nulla (...)
+                                        </div>
+                                    </li>
+                                    <li class="media my-4">
+                                        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg" alt="An image">
+                                        <div class="media-body">
+                                            <a href="">
+                                                <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
+                                            </a>
+                                            Cras sit amet nibh libero, in gravida nulla (...)
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder5.jpg" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <a href="">
+                                                <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
+                                            </a>
+                                            Cras sit amet nibh libero, in gravida nulla (...)
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Post-->
+
+        </div>
+    </main>
+    <!--Main layout-->
     
 
     <footer>
