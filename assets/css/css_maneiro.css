@@ -1,55 +1,5 @@
 /* Início header */
 
-.nav {
-	height: 50px;
-	width: 100%;
-	background: #f7c948;
-	position: relative;
-}
-
-.nav-header {
-	display: inline;
-}
-
-.nav-title {
-	display: inline-block;
-	font-size: 22px;
-	padding: 8px;
-}
-
-.nav-title a {
-	text-decoration: none;
-	color: #222;
-}
-
-.nav-title a:hover {
-	opacity: 0.9;
-}
-
-.nav-btn {
-	display: none;
-}
-
-.nav-links {
-	display: inline;
-	font-size: 18px;
-}
-
-.nav-links a {
-	display: inline-block;
-	margin: 13px 10px 13px 10px;
-	text-decoration: none;
-	color: #222;
-}
-
-.nav-links a:hover {
-	opacity: 0.9;
-}
-
-#nav-check {
-	display: none;
-}
-
 .header-bg {
 	background-image: url('../figuras/header_bg.svg');
 	background-repeat: no-repeat;
@@ -60,28 +10,11 @@
 }
 
 .header-bg .title {
-	padding: 40px;
+	padding-top: 80px;
 	opacity: 0.8;
 }
 
 /* Fim header */
-
-#content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-#content section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 70%;
-	height: 60vh;
-	background: #f3f3f3;
-}
 
 /* Início footer */
 
@@ -146,62 +79,10 @@ footer {
 /* Fim footer */
 
 @media (max-width: 600px) {
-	.nav-btn {
-		display: inline-block;
-		position: absolute;
-		right: 0px;
-		top: 0px;
+	.header-bg {
+		display: none;
 	}
-
-	.nav-btn label {
-		display: inline-block;
-		width: 50px;
-		height: 50px;
-		padding: 13px;
-	}
-
-	.nav-btn label:hover,
-	#nav-check:checked ~ .nav-btn > label {
-		background-color: rgba(0, 0, 0, 0.3);
-	}
-
-	.nav-btn > label > span {
-		display: block;
-		width: 25px;
-		height: 10px;
-		border-top: 2px solid #222;
-	}
-
-	.nav-links {
-		position: absolute;
-		display: block;
-		width: 100%;
-		text-align: center;
-		background: #f7c948;
-		height: 0px;
-		transition: all 0.3s ease-in;
-		overflow-y: hidden;
-		top: 50px;
-		left: 0px;
-	}
-
-	.nav-links > a {
-		display: block;
-		width: 100%;
-	}
-
-	#nav-check:not(:checked) ~ .nav-links {
-		height: 0px;
-		z-index: 1;
-	}
-
-	#nav-check:checked ~ .nav-links {
-		height: calc(100vh - 50px);
-		z-index: 1;
-		overflow-y: auto;
-	}
-
-	#content section {
-		width: 100%;
+	.header-bg .title {
+		padding-top: 20px;
 	}
 }
