@@ -83,6 +83,12 @@ footer {
 		display: none;
 	}
 	.header-bg .title {
-		padding-top: 20px;
 	}
+}
+
+
+
+
+#twitch-embed {
+	margin: 0px 0px 300px  300px; 
 }
