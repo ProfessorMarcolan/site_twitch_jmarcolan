@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "post": "como criar variaveis, tipos de variavies",
+        "post_title": "Como construir o git",
+        "post_des": "como criar variaveis, tipos de variavies",
         "imagem_front": "",
         "url": "como_instalar_git",
         "seo": ["git","github","como instalar o git"]
