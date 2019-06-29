@@ -6,6 +6,8 @@ class printando_na_tela{
 
     // precisa melhorar a estrutura dos dados que v'ao para o div.innerHTML
     estruturar_elemento(element){
+        this.element = element
+
     let div = $(`
     
     <div class="col-sm-4">
@@ -14,16 +16,16 @@ class printando_na_tela{
     
     <div class="card-container">
       <div class="card">
-        <div class="card__img card__img--js"></div>
-        <h2 class="card__title">Javascript</h2>
-        <p class="card__description">JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+        <div class="card__img card__img--js" style="background-image: url('${element.imagem_front}');"></div>
+        <h2 class="card__title">${element.post_title}</h2>
+        <p class="card__description">${element.post_des}</p>
         <div class="card__read">Read more</div>
       </div>
     </div>
 
   </div>
 
-    `)
+    `).on("click", ()=> this.clicou())
  
 
     //    <div class="col-sm-4">
@@ -44,6 +46,12 @@ class printando_na_tela{
     // </div>
 
     return div
+}
+
+clicou(){
+    console.log("cliucouasd")
+    window.location.href = this.element.url;
+
 }
 
  mostra_interface(data){
