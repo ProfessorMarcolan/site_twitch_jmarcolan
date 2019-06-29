@@ -2,83 +2,117 @@
 
 
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Início</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/css_maneiro.css">
+  <link href="/assets/prism.css" rel="stylesheet" />
+  <script src="/logica/logica1.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!-- 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha256-P8k8w/LewmGk29Zwz89HahX3Wda5Bm8wu2XkCC0DL9s=" crossorigin="anonymous" />    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha256-yDarFEUo87Z0i7SaC6b70xGAKCghhWYAZ/3p+89o4lE=" crossorigin="anonymous"></script> -->
-
-<script src="/logica/logica1.js"></script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<link href="/assets/prism.css" rel="stylesheet" />
-
-
-<link rel="stylesheet" href="/assets/novo.css">
-<link rel="stylesheet" href="/assets/css/css_maneiro.css"
+</head>
 
 
 
 
 
 
-<!--
-<link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script> -->
-
-<!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=python&amp;skin=sunburst"></script> -->
 
 
-<div class="container">
 
-        <div class="header">
-                <!-- <div class="row"> -->
-                        <!-- <div class="col"><a href="/"> -->
-                                <img class="card-img-top" src="/assets/logo-site.png"  alt="Card image cap"></a>
-
-                        <!-- </div> 
-                        <div class="col"><a href="/">
-                                <h1>Professor Marcolan</h1>
-                                <p>Potencialize com conhecimento os seus estudos e projetos!</p></a>
-                        </div>
-                </div> -->
+<!-- <link rel="stylesheet" href="/assets/novo.css"> -->
 
 
+
+
+
+
+
+<header>
+  <nav style='background: #f7c948' class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" style='color: #222' href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" style='color: #222' href="#">
+            Comunidade
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style='color: #222' href="#">
+            Blog
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style='color: #222' id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Tags </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" style='color: #222' href="/tag/html">HTML/CSS</a>
+            <a class="dropdown-item" style='color: #222' href="/tag/javascript">Javascript</a>
+            <a class="dropdown-item" style='color: #222' href="/tag/git">Git</a>
+            <a class="dropdown-item" style='color: #222' href="/tag/python">Python</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="header-content">
+    <div class="header-bg">
+      <div class="title container">
+        <h1>Professor Marcolan</h1>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+
+
+            </div>
+
+            <div class="col-sm-8">
+              <div id="twitch-embed" class="img-fluid"></div>
+
+              <!-- Load the Twitch embed script -->
+              <!-- talvez fique responsivo se usar as coisas desse site. -->
+              <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+              <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+              <script type="text/javascript">
+                new Twitch.Embed("twitch-embed", {
+                  width: 600,
+                  height: 400,
+                  channel: "jmarcolan",
+                  layout: "video"
+
+
+                });
+              </script>
+
+
+            </div>
+          </div>
         </div>
 
 
-        <!-- <div class="col text-center">
-                <a href="/">
-                        <div class="row">
-                                <div class="col">
-                                        <img class="card-img-top img-fluid"
-                                                src="/assets/professor-marcolan-logo.png"
-                                                height="250" width="100" alt="Card image cap">
-                                </div>
-                                <div class="col">
-                                        
-                                </div>
-                        </div>
-                </a>
+      </div>
 
+    </div>
+  </div>
 
+</header>
 
-        </div> -->
-        <div class="nav-scroller py-1 mb-2">
-                <nav class="nav d-flex justify-content-between navegador">
-                        <a class="p-2 text-muted" href="/python">Curso de python</a>
-                        <a class="p-2 text-muted" href="/git">Curso de Git</a>
-                        <a class="p-2 text-muted" href="/about">About</a>
-                </nav>
-        </div>
-</div>
 
 <!-- <div class="navegador">
         <ul>
