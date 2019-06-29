@@ -5,23 +5,33 @@ permalink: /tag/python
 
 
 
+<div class="container ">
+
+    <div id= "set-stick" class="">
+    <div class="header">
+      <div id="posts_react" class="row">
+
+
+      
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
 <h2> Posts sobre o react</h2>
 
->
     
-    <div class="card-container">
-        <div id="posts_react"></div>
-
-
-    </div>
+        
   
-
 
 
 <script>
 
 
-componente_cartoes = new printando_na_tela( document.getElementById("posts_react"))
+componente_cartoes = new printando_na_tela( $("#posts_react"))
 
 fetch( "/py/topicos.json")
   .then((resp) => resp.json()) // Transform the data into json
