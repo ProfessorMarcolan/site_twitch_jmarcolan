@@ -155,10 +155,6 @@ footer {
     border-bottom: 2px solid var(--color-dark); 
 }
   
-.card__img--a{
-	background-image: url("https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png"); 
-}
-
 
 .card__img--js {
       background-image: url("https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png"); 
