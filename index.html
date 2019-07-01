@@ -24,22 +24,11 @@ layout: land_page
 
 <script>
     
-    
-    
-    
-    fetch( "/assets/topicos.json")
-      .then((resp) => resp.json()) // Transform the data into json
-      .then(function(data) {
 
-        data.forEach(element => {
-          let componente_cartoes = new printando_na_tela( $("#posts_react"))
-          
 
-          componente_cartoes.tag_ancora.append(componente_cartoes.estruturar_elemento(element))
-        // Create and append the li's to the ul
-        })
-    
-    
+let gerente_interface = new Mostra_cards("/assets/topicos.json", $("#posts_react"))
+
+
     
     
     </script>

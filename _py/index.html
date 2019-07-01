@@ -32,30 +32,8 @@ permalink: /tag/python
 <script>
 
 
-elementos_pagina =[]
 // componente_cartoes = new printando_na_tela( $("#posts_react"))
 
-fetch( "/py/topicos.json")
-  .then((resp) => resp.json()) // Transform the data into json
-  .then(function(data) {
-    // componente_cartoes.mostra_interface(data)
-    console.log(data)
-    
-    data.forEach(element => {
-      let ele = new printando_na_tela($("#posts_react"))
-
-
-    ele.estruturar_elemento(element)
-
-    elementos_pagina.push(ele)
-      
-    });
-    
-   
-    // Create and append the li's to the ul
-    })
-
-
-
+let gerente_interface = new Mostra_cards("/py/topicos.json", $("#posts_react"))
 
 </script>

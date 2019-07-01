@@ -1,15 +1,15 @@
-class printando_na_tela{
+class Cards {
 
-    constructor(element){
-        console.log(element)
-        this.tag_ancora= element
-    }
+  constructor(element) {
+    console.log(element)
+    this.tag_ancora = element
+  }
 
-    // precisa melhorar a estrutura dos dados que v'ao para o div.innerHTML
-    estruturar_elemento(element){
-      console.log(element)
-      console.log("asiudauhsidhis")
-        this.element = element
+  // precisa melhorar a estrutura dos dados que v'ao para o div.innerHTML
+  estruturar_elemento(element) {
+    console.log(element)
+    console.log("asiudauhsidhis")
+    this.element = element
 
     let div = $(`
     
@@ -27,36 +27,56 @@ class printando_na_tela{
 
   </div>
 
-    `).on("click", ()=> this.clicou())
- 
+    `).on("click", () => this.clicou())
 
-    //    <div class="col-sm-4">
-    // <div class="card">
-    // <div class="card__img card__img--react"></div>
-    //   <h2 class="card__title"><p><a href="${element.url}"> ${element.post_title} </a></p></h2>
-    //   <p class="card__description">${element.post_des}</p>
-    //   <div class="card__read"><a href="${element.url}"> Se aprochega! Vem conferir! </a></div>
-    // </div>
-    // </div>
 
-    // style="background-image: url('${element.imagem_front}');"
-
-    // <div> <p> Isso deve se tornar um cartao
-    // <p/>
-    // <p><a href="${element.url}"> ${element.post} </a></p>
-    //     <img src="${element.imagem_front}" alt="Minha Figura">	
-    // </div>
     this.tag_ancora.append(div)
-    // console.log(div)
 
-    // return div
-}
+  }
 
-clicou(){
+  clicou() {
     console.log("cliucouasd")
     window.location.href = this.element.url;
 
+  }
+
 }
+
+class Mostra_cards{
+  constructor(url,local_aonde_mostrar)
+  {
+    this.url = url
+    this.local_aonde_mostrar = local_aonde_mostrar
+      this.elementos_pagina =[]
+      fetch( this.url)
+      .then((resp) => resp.json()) // Transform the data into json
+      .then((data)=> {
+        // componente_cartoes.mostra_interface(data)
+        console.log(data)
+        
+        data.forEach(element => {
+          this.mostra(element)
+         
+          
+        });
+        
+      
+        // Create and append the li's to the ul
+        })
+
+
+
+  }
+
+
+  mostra(element){
+    let ele = new Cards(this.local_aonde_mostrar)
+
+
+    ele.estruturar_elemento(element)
+
+    this.elementos_pagina.push(ele)
+  }
 
 }
 
