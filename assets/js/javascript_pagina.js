@@ -1,18 +1,20 @@
 class printando_na_tela{
 
     constructor(element){
+        console.log(element)
         this.tag_ancora= element
     }
 
     // precisa melhorar a estrutura dos dados que v'ao para o div.innerHTML
     estruturar_elemento(element){
+      console.log(element)
+      console.log("asiudauhsidhis")
         this.element = element
 
     let div = $(`
     
     <div class="col-sm-4">
 
-    <h1 class="title">Cards</h1>
     
     <div class="card-container">
       <div class="card">
@@ -44,8 +46,10 @@ class printando_na_tela{
     // <p><a href="${element.url}"> ${element.post} </a></p>
     //     <img src="${element.imagem_front}" alt="Minha Figura">	
     // </div>
+    this.tag_ancora.append(div)
+    // console.log(div)
 
-    return div
+    // return div
 }
 
 clicou(){
@@ -54,19 +58,7 @@ clicou(){
 
 }
 
- mostra_interface(data){
-
-// let lugar = document.getElementById("posts")
-data.forEach(element => {
-   let elemento =  this.estruturar_elemento(element)
-
-    this.tag_ancora.append(elemento)
-});
-
-console.log(data)
 }
 
 
 
-
-}
