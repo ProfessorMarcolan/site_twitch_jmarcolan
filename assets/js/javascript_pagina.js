@@ -81,4 +81,32 @@ class Mostra_cards{
 }
 
 
+class Mostra_cards_3 extends Mostra_cards{
+  constructor(url, local_aonde_mostrar){
+    super(url,local_aonde_mostrar)
+    this.qnt_mostrar = 3
+    this.i = 0
+
+  }
+
+  mostra(element){
+   
+
+    if(this.i < this.qnt_mostrar){
+      let ele = new Cards(this.local_aonde_mostrar)
+
+
+    ele.estruturar_elemento(element)
+
+    this.elementos_pagina.push(ele)
+
+    }
+
+    this.i = this.i +1
+    
+  }
+
+} 
+
+
 

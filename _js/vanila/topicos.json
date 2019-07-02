@@ -1,52 +1,61 @@
 [
+
     {
         "id": 1,
-        "post": "como criar variaveis, tipos de variavies",
-        "imagem_front": "",
-        "url": "como_instalar_git",
+        "post_title": "Javascript",
+        "post_des": "As tres linguagens dos navegadores (html, css, javascript)",
+        "imagem_front": "https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png",
+        "url": "js_interpretadores",
         "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 2,
-        "post": "controladors de fluxo",
-        "imagem_front": "",
-        "url": "oi_mundo"
+        "id": 1,
+        "post_title": "Javascript",
+        "post_des": "Variaveis e tipos primitivos (passando por copia, passando por referencia)",
+        "imagem_front": "https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png",
+        "url": "/tag/javascript",
+        "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 3,
-        "post": "funções, funções  anonimas, funções setas",
-        "imagem_front": "",
-        "url": "oi_mundo"
+        "id": 1,
+        "post_title": "Javascript",
+        "post_des": " Funções e os argumentos de funções",
+        "imagem_front": "https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png",
+        "url": "/tag/javascript",
+        "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 4,
-        "post": "passando parametros para funções",
-        "imagem_front": "",
-        "url": "oi_mundo"
+        "id": 1,
+        "post_title": "Javascript",
+        "post_des": "Paradigma orientado a eventos",
+        "imagem_front": "https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png",
+        "url": "/tag/javascript",
+        "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 4,
-        "post": "paradigma da orientação a objetos (classe, herança, polimorfinsmo,encapsulamento)",
-        "imagem_front": "",
-        "url": "oi_mundo"
+        "id": 1,
+        "post_title": "Javascript",
+        "post_des": "Entendendo o contexto do this",
+        "imagem_front": "https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png",
+        "url": "/tag/javascript",
+        "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 6,
-        "post": "paradigma orientado a eventos",
-        "imagem_front": "",
-        "url": "oi_mundo"
+        "id": 1,
+        "post_title": "Javascript",
+        "post_des": "DOM",
+        "imagem_front": "https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png",
+        "url": "/tag/javascript",
+        "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 6,
-        "post": "funções assincronas",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-     {
-        "id": 6,
-        "post": "promissess",
-        "imagem_front": "",
-        "url": "oi_mundo"
+        "id": 1,
+        "post_title": "Javascript",
+        "post_des": "Descrição do javascript",
+        "imagem_front": "https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png",
+        "url": "/tag/javascript",
+        "seo": ["git","github","como instalar o git"]
     }
+
 ]
 

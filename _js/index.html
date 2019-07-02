@@ -1,5 +1,5 @@
 ---
-layout : layoute_pagina_principal
+layout : land_page
 permalink: /tag/javascript
 ---
 
@@ -7,39 +7,29 @@ permalink: /tag/javascript
 
 <h2> Posts sobre o react</h2>
 
-<div id = "posts_react"></div>
+
+<div id="posts_react" class="row"></div>
 
 
 <h2> Posts sobre o javascript vanila</h2>
 
-<div id = "post_vanila"></div>
+<div id="post_vanila" class="row"></div>
+
 
 
 <script>
 
 
 
-componente_cartoes = new printando_na_tela( document.getElementById("posts_react"))
-
-fetch( "/js/react/topicos.json")
-  .then((resp) => resp.json()) // Transform the data into json
-  .then(function(data) {
-    componente_cartoes.mostra_interface(data)
-    // Create and append the li's to the ul
-    })
 
 
-    componente_cartoes_vanila = new printando_na_tela( document.getElementById("post_vanila"))
 
-fetch( "/js/vanila/topicos.json")
-  .then((resp) => resp.json()) // Transform the data into json
-  .then(function(data) {
-    componente_cartoes_vanila.mostra_interface(data)
-    // Create and append the li's to the ul
-    })
+let gerente_interface = new Mostra_cards_3("/js/react/topicos.json", $("#posts_react"))
 
-    
 
+
+
+let gerente_interface1 = new Mostra_cards_3("/js/vanila/topicos.json", $("#post_vanila"))
 
 
 </script>
