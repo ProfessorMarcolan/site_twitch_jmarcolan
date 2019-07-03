@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: example-page
+permalink: tipos_variaveis_javascript
 video:
   ligado: false
   url: "https://www.youtube.com/embed/8AEfxb_PVa0"
@@ -13,37 +13,77 @@ image-intro:
 ---
 
 
-3.10.1 Function Scope and Hoisting
-In some C-like programming languages, each block of code within curly braces has its
-own scope, and variables are not visible outside of the block in which they are declared.
-This is called block scope, and JavaScript does not have it. Instead, JavaScript uses
-3.10 Variable Scope | 53
-Core JavaScript
-function scope: variables are visible within the function in which they are defined and
-within any functions that are nested within that function.
-In the following code, the variables i, j, and k are declared in different spots, but all
-have the same scope—all three are defined throughout the body of the function:
-function test(o) {
- var i = 0; // i is defined throughout function
- if (typeof o == "object") {
- var j = 0; // j is defined everywhere, not just block
- for(var k=0; k < 10; k++) { // k is defined everywhere, not just loop
- console.log(k); // print numbers 0 through 9
- }
- console.log(k); // k is still defined: prints 10
- }
- console.log(j); // j is defined, but may not be initialized
-}
-JavaScript’s function scope means that all variables declared within a function are visible throughout the body of the function. Curiously, this means that variables are even
-visible before they are declared. This feature of JavaScript is informally known as hoisting: JavaScript code behaves as if all variable declarations in a function (but not any
-associated assignments) are “hoisted” to the top of the function. Consider the following
-code:
 
-var scope = "global";
-function f() {
- console.log(scope); // Prints "undefined", not "global"
- var scope = "local"; // Variable initialized here, but defined everywhere
- console.log(scope); // Prints "local"
-}
 
- David-Flanagan-JavaScript_-The-Definitive-Guide-6th-Edition_-Activate-Your-Web-Pages-OReilly-Media-2011.pdf
+<h3> Fracamente e dinamicamente tipada</h3>
+<p>
+  Isso signifca que para a criação de variaveis não se precisa declarar espeficamente qual vai ser o tipo de várivel. Por exemplo, você não precisa explificamente disser para o 
+  javascript que você gostaria que a variavel fosse um texto. Ele consegue, em tempo de execução determinar que a aquela variavel é do tipo texto. E ele á fracamente tipada
+  porque após ela ser criada tanto faz o tipo . 
+
+  Referencias (https://pt.wikipedia.org/wiki/Linguagem_tipada, )
+</p>
+
+
+
+<h2> tipos de variaives no javascript</h2>
+
+O javascript possui 3 tipos de variaveis primiticas que são atribuidas em tempo de execução, booleana (bool), numérica (-number) e de texto (string). Existe algumas formas de constuir
+uma variavel por esse tutorial iremos entender usando a palavra reservada let (tem const e var que iremos discutir em outros tutoriais)
+
+Exmeplo
+
+let variavel_boleana = true  //variavel booleana 
+let variavel_string = "oi mundo" //variavel string 
+let variavel_numero = 123123
+let variavel_numero2 = 132.231 
+
+
+Esse tipos primitivos são os tijolos para construir estruturas de dados. Geralmente os programas usam estrutuas de dados. Todas as estruturas de dados do javascript são typos de 
+objetos diferentes . Eles se  dividem em listas de objetos, dicionarios e funções. Cada um desses tópicos veremos nas proximos tutoriais. 
+
+
+<!-- estruturas de dados -->
+
+<h3> Objetos com a estrutura de dados de lista</h2>
+  Como que inicializa esse tipo 
+
+  let variave_lista = []
+
+  e voce pode inicializar
+
+<!-- http://braziljs.github.io/eloquente-javascript/chapters/estrutura-de-dados/ -->
+<h3> Objetos do tipo dicionario,  pares valores (comumento chamados de objetos)</h3>
+
+
+
+
+
+<!-- vamos deixar para o proximo tutorial pq só isso já é bastante coisa par entender  -->
+<h3> Objetos do tipo função</h3>
+
+É importante entender que uma função no javascript é um ojbeto porque você pode passar ela como parametro. Ela tem a diferença que ela pode ser executada, invocada. Uma função
+pode ser invocada
+
+
+
+
+As variaveis primitavas são imutaveis o que signifca que toda vez que você mudar o valor delas será criado uma nova variavel. Para entender o const nesse tipo de varivel faz com que
+esses variaveis primitvas sejam imutaveis e constante durante o código de forma que não se possa alterar o seu valor . 
+
+
+
+
+
+
+
+- typo, valor, variavel (dinamic type, weak )
+    - tipos de variaveis primitivos
+        -bool
+        -number
+        -string
+
+    -objetos
+        -object (dicionario)
+        -array (lista)
+        -funções (proximos videos)
