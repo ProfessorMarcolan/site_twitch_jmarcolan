@@ -1,0 +1,79 @@
+
+- interpretador js, css , html
+    - aonde ele se encontra
+
+    - uma das caracteristicas mais importanes é 
+        - single tread non blocante código. (coisa mais importante)
+
+
+- typo, valor, variavel (dinamic type, weak )
+    - tipos de variaveis primitivos
+        -bool
+        -number
+        -string
+
+    -objetos
+        -object (dicionario)
+        -array (lista)
+        -funções (proximos videos)
+
+
+Computer programs work by manipulating values, such as the number 3.14 or the text
+“Hello World.” The kinds of values that can be represented and manipulated in a
+programming language are known as types, and one of the most fundamental characteristics of a programming language is the set of types it supports. When a program
+needs to retain a value for future use, it assigns the value to (or “stores” the value in) a
+variable. A variable defines a symbolic name for a value and allows the value to be
+referred to by name. The way that variables work is another fundamental characteristic
+of any programming language. This chapter explains types, values, and variables in
+JavaScript. These introductory paragraphs provide an overview, and you may find it
+helpful to refer to §1.1 while you read them. The sections that follow cover these topics
+in depth.
+JavaScript types can be divided into two categories: primitive types and object types.
+JavaScript’s primitive types include numbers, strings of text (known as strings), and
+Boolean truth values (known as booleans). A significant portion of this chapter is dedicated to a detailed explanation of the numeric (§3.1) and string (§3.2) types in JavaScript. Booleans are covered in §3.3.
+The special JavaScript values null and undefined are primitive values, but they are not
+numbers, strings, or booleans. Each value is typically considered to be the sole member
+of its own special type. §3.4 has more about null and undefined.
+Any JavaScript value that is not a number, a string, a boolean, or null or undefined is
+an object. An object (that is, a member of the type object) is a collection of properties
+where each property has a name and a value (either a primitive value, such as a number
+or string, or an object). One very special object, the global object, is covered in §3.5,
+but more general and more detailed coverage of objects is in Chapter 6.
+An ordinary JavaScript object is an unordered collection of named values. The language
+also defines a special kind of object, known as an array, that represents an ordered
+collection of numbered values. The JavaScript language includes special syntax for
+working with arrays, and arrays have some special behavior that distinguishes them
+from ordinary objects. Arrays are the subject of Chapter 7.
+29
+JavaScript defines another special kind of object, known as a function. A function is an
+object that has executable code associated with it. A function may be invoked to run
+that executable code and return a computed value. Like arrays, functions behave differently from other kinds of objects, and JavaScript defines a special language syntax
+for working with them. The most important thing about functions in JavaScript is that
+they are true values and that JavaScript programs can treat them like regular objects.
+Functions are covered in Chapter 8.
+
+
+
+- ela possui funções, escopo
+
+
+
+
+
+
+- escopos function scopes
+    function test(o) {
+    var i = 0; // i is defined throughout function
+    if (typeof o == "object") {
+    var j = 0; // j is defined everywhere, not just block
+    for(var k=0; k < 10; k++) { // k is defined everywhere, not just loop
+    console.log(k); // print numbers 0 through 9
+    }
+    console.log(k); // k is still defined: prints 10
+    }
+    console.log(j); // j is defined, but may not be initialized
+    }
+
+
+
+- Expressions and Operators

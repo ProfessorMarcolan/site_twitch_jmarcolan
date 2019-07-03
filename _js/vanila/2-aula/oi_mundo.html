@@ -1,0 +1,49 @@
+---
+layout: post
+permalink: example-page
+video:
+  ligado: false
+  url: "https://www.youtube.com/embed/8AEfxb_PVa0"
+seletor: py
+image-intro:
+  ligado: true
+  url: /py/1-atom-ide-para-python-gratis/imagem_inicial.jpg
+  text:  Polimorfismo é a ferramenta da programação orientada ao objeto que permite implementações elegantes de software. Porém, muito mais importante que isso é que essa ferramenta permite, caso seja necessário, que o software seja facilmente modificado. Nesse post, de 5 minutos, vamos explorar definir o que é polimorfismo em Python e exemplificar o uso do polimorfismo. [10]
+
+---
+
+
+3.10.1 Function Scope and Hoisting
+In some C-like programming languages, each block of code within curly braces has its
+own scope, and variables are not visible outside of the block in which they are declared.
+This is called block scope, and JavaScript does not have it. Instead, JavaScript uses
+3.10 Variable Scope | 53
+Core JavaScript
+function scope: variables are visible within the function in which they are defined and
+within any functions that are nested within that function.
+In the following code, the variables i, j, and k are declared in different spots, but all
+have the same scope—all three are defined throughout the body of the function:
+function test(o) {
+ var i = 0; // i is defined throughout function
+ if (typeof o == "object") {
+ var j = 0; // j is defined everywhere, not just block
+ for(var k=0; k < 10; k++) { // k is defined everywhere, not just loop
+ console.log(k); // print numbers 0 through 9
+ }
+ console.log(k); // k is still defined: prints 10
+ }
+ console.log(j); // j is defined, but may not be initialized
+}
+JavaScript’s function scope means that all variables declared within a function are visible throughout the body of the function. Curiously, this means that variables are even
+visible before they are declared. This feature of JavaScript is informally known as hoisting: JavaScript code behaves as if all variable declarations in a function (but not any
+associated assignments) are “hoisted” to the top of the function. Consider the following
+code:
+
+var scope = "global";
+function f() {
+ console.log(scope); // Prints "undefined", not "global"
+ var scope = "local"; // Variable initialized here, but defined everywhere
+ console.log(scope); // Prints "local"
+}
+
+ David-Flanagan-JavaScript_-The-Definitive-Guide-6th-Edition_-Activate-Your-Web-Pages-OReilly-Media-2011.pdf
