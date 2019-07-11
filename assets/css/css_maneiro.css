@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
-* {
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");* {
     margin: 0;
     padding: 0;
     box-sizing: border-box
@@ -30,7 +29,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .icon-wrapper {
-        display: none
+        display:none
     }
 }
 
@@ -116,15 +115,13 @@ body {
     font-size: 2.5rem
 }
 
-.footer__nav-link .fab,
-.footer__nav-link .fas {
+.footer__nav-link .fab,.footer__nav-link .fas {
     padding: 1rem;
     -webkit-transition: all .2s;
     transition: all .2s
 }
 
-.footer__nav-link .fab:hover,
-.footer__nav-link .fas:hover {
+.footer__nav-link .fab:hover,.footer__nav-link .fas:hover {
     -webkit-transform: translateY(0.5rem);
     transform: translateY(0.5rem)
 }
@@ -177,13 +174,13 @@ body {
 
 @media screen and (min-width: 700px) {
     .header__container {
-        width: 66rem
+        width:66rem
     }
 }
 
 @media screen and (min-width: 1200px) {
     .header__container {
-        width: 80rem
+        width:80rem
     }
 }
 
@@ -201,7 +198,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .header__logo {
-        margin: 0
+        margin:0
     }
 }
 
@@ -223,7 +220,7 @@ body {
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    border-bottom: 2px solid rgba(32, 28, 43, 0.9);
+    border-bottom: 2px solid rgba(32,28,43,0.9);
     box-shadow: 2px 2px 7px #201c2b
 }
 
@@ -232,8 +229,8 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 28, 43, 0.2)), to(rgba(32, 28, 43, 0.8)));
-    background-image: linear-gradient(rgba(32, 28, 43, 0.2), rgba(32, 28, 43, 0.8))
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(32,28,43,0.2)), to(rgba(32,28,43,0.8)));
+    background-image: linear-gradient(rgba(32,28,43,0.2), rgba(32,28,43,0.8))
 }
 
 .post__bgimage--post-descartes {
@@ -260,7 +257,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .post__container {
-        width: 60rem
+        width:60rem
     }
 }
 
@@ -278,8 +275,7 @@ body {
     background-image: url("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE1ODA0OTcxMjY3MzYwMjY5/rene-descartes-37613-1-402.jpg")
 }
 
-.post__author-name,
-.post__date {
+.post__author-name,.post__date {
     position: relative;
     font-size: 1.6rem;
     z-index: 1;
@@ -448,7 +444,7 @@ body {
 
 @media screen and (min-width: 1600px) {
     .card-container {
-        -webkit-box-pack: justify;
+        -webkit-box-pack:justify;
         justify-content: space-between;
         width: 110rem;
         -webkit-box-orient: initial;
@@ -472,19 +468,19 @@ body {
 
 @media screen and (min-width: 700px) {
     .card {
-        width: 30%
+        width:30%
     }
 }
 
 @media screen and (min-width: 1200px) {
     .card {
-        width: 30%
+        width:30%
     }
 }
 
 @media screen and (min-width: 1600px) {
     .card {
-        width: 30%
+        width:30%
     }
 }
 
@@ -606,7 +602,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .nav-menu.active-menu {
-        display: none
+        display:none
     }
 }
 
@@ -625,7 +621,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .nav-menu__list {
-        display: -webkit-box;
+        display:-webkit-box;
         display: flex
     }
 }
@@ -669,7 +665,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .nav {
-        display: -webkit-box;
+        display:-webkit-box;
         display: flex
     }
 }
@@ -681,7 +677,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .nav__list {
-        display: -webkit-box;
+        display:-webkit-box;
         display: flex;
         -webkit-box-align: center;
         align-items: center

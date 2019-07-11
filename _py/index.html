@@ -5,23 +5,10 @@ permalink: /tag/python
 
 
 
-<!-- <div class="container ">
-
-    <h2> Posts sobre o Python </h2>
-    <div id= "set-stick" class="">
-    <div class="header">
-      <div id="posts_react" class="row">
 
 
-      
-    </div>
 
-  </div>
-</div>
-</div> -->
-
-
-<section class="section posts">
+<section class="section posts active">
   <h2 class="section__title">Posts</h2>
   <div class="card-container">
     <div class="card">
@@ -68,6 +55,12 @@ permalink: /tag/python
       <div class="card__read">Mais sobre</div>
     </div>
   </div>
+  <h2> Posts sobre o Python </h2>
+  <div class="card-container" id="posts_react">
+   
+
+  </div>
+
 </section>
 
 
@@ -79,7 +72,7 @@ permalink: /tag/python
 
 <script>
 
-// let gerente_interface = new Mostra_cards("/py/topicos.json", $("#posts_react"))
+let gerente_interface = new Mostra_cards("/py/topicos.json", $("#posts_react"))
 
 
 </script>
