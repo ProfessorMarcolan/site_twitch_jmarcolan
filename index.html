@@ -1,34 +1,15 @@
 ---
 layout: land_page
 ---
-
-<div class="container">
-
-    <div class="container ">
-
-        <div id= "set-stick" class="">
-        <div class="header">
-          <div id="posts_react" class="row">
-    
-    
-          
-        </div>
-    
-      </div>
-    </div>
-    </div>
-    
-
-</div>
+<section class="section home active">
+  <h2 class="section__title section__title--twitch">Twitch</h2>
+  <a href="https://twitch.com/jmarcolan" target="_blank" class="section__logo"></a>
+  <p class="section__description section__description--center">Lives de Segunda a Sexta <span>das 21:00 as 24:00</span></p>
+ 
+  <div id="twitch-embed"></div>
+</section>
 
 
-<script>
-    
 
-
-let gerente_interface = new Mostra_cards("/assets/topicos.json", $("#posts_react"))
-
-
-    
-    
-    </script>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script src="/assets/main-min.js"></script>
