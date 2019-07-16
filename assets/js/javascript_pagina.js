@@ -16,7 +16,7 @@ class Cards {
     <div class="col-sm-4">
 
     
-    <div class="card-container">
+    <div class="card-container flex-wrap space-between">
       <div class="card">
         <div class="card__img card__img--js" style="background-image: url('${element.imagem_front}');"></div>
         <h2 class="card__title">${element.post_title}</h2>
