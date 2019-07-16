@@ -6,119 +6,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Início</title>
+  <title>Professor Marcolan</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link href="/assets/prism.css" rel="stylesheet" /> -->
+  
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/css_maneiro.css">
-  <link href="/assets/prism.css" rel="stylesheet" />
-  <script src="/logica/logica1.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+
+  <!-- <script src="/logica/logica1.js"></script> -->
 
 </head>
 
-
-
-
-
-
-
-
-
-<!-- <link rel="stylesheet" href="/assets/novo.css"> -->
-
-
-
-
-
-
-
-<header>
-  <nav style='background: #f7c948' class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" style='color: #222' href="#">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
-          <a class="nav-link" style='color: #222' href="#">
-            Comunidade
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style='color: #222' href="#">
-            Blog
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" style='color: #222' id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Tags </a>
-          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-            <a class="dropdown-item" style='color: #222' href="/tag/html">HTML/CSS</a>
-            <a class="dropdown-item" style='color: #222' href="/tag/javascript">Javascript</a>
-            <a class="dropdown-item" style='color: #222' href="/tag/git">Git</a>
-            <a class="dropdown-item" style='color: #222' href="/tag/python">Python</a>
-          </div>
-        </li>
+<header class="header">
+  <div class="header__container">
+    <div class="icon-wrapper">
+      <div class="icon icon__menu"></div>
+    </div>
+    <img src="/assets/logo.png" alt="logo" class="header__logo"/>
+    <h1 class="header__title">Professor Marcolan</h1>
+ 
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link home">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link cursos">Cursos</a></li>
+        <li class="nav__item"><a href="#" class="nav__link posts">Posts</a></li>
+        <li class="nav__item"><a href="#" class="nav__link sobre">Sobre</a></li>
+        <li class="nav__item"><a href="#" class="nav__link nav__link--border contribuir">Como contribuir</a></li>
       </ul>
-    </div>
-  </nav>
-
-  <div id="header-content">
-    <div class="header-bg">
-      <div class="title container">
-        <h1>Professor Marcolan</h1>
-
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-4">
-
-
-            </div>
-
-            <div class="col-sm-8">
-              <div id="twitch-embed" class="img-fluid"></div>
-
-              <!-- Load the Twitch embed script -->
-              <!-- talvez fique responsivo se usar as coisas desse site. -->
-              <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-              <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-              <script type="text/javascript">
-                new Twitch.Embed("twitch-embed", {
-                  width: 600,
-                  height: 400,
-                  channel: "jmarcolan",
-                  layout: "video"
-
-
-                });
-              </script>
-
-
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
+    </nav>
   </div>
-
 </header>
 
 
-<!-- <div class="navegador">
-        <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/python">Curso de python</a></li>
-                <li><a href="/git"> Curso de Git</a></li>
-                <li><a href="/about">About</a></li>
-              </ul>
-</div> -->
+
+
+
