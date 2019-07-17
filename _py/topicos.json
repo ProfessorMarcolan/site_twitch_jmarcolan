@@ -36,6 +36,22 @@
         "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
         "url": "como_instalar_git",
         "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 1,
+        "post_title": "Como construir o git",
+        "post_des": "como criar variaveis, tipos de variavies",
+        "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
+        "url": "como_instalar_git",
+        "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 1,
+        "post_title": "Como construir o git",
+        "post_des": "como criar variaveis, tipos de variavies",
+        "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
+        "url": "como_instalar_git",
+        "seo": ["git","github","como instalar o git"]
     }
 
 ]

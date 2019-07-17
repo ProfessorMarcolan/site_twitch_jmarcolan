@@ -4,79 +4,106 @@ author: "Joao"
 
 ---
 
-<script src="/assets/prism.js"></script>
 
-<div class="fundo">
+<section class="section contribuir active">
   
-  <div class="container ">
-
-    <div id= "set-stick" class="">
-    <div class="header">
-      <div class="row">
+<div class="section__container">
+  <h2 class="section__title">Como contribuir</h2>
+  
+  <div class="fundo">
+  
+    <div class="section__container ">
+  
+      <div id= "set-stick" class="">
+      <div class="header">
+        <div class="row">
+          <div class="col">
+            <h1 class=""> {{ page.title }}</h1>
+            <p>Os tópicos desse post são :</p>
+              <p>
+                <ul id="todos-titulos" onload="pegar_titulos()"></ul>
+              </p>
+          </div>
+  
+          {% if page.video.ligado == true %}
+          <div class="col">
+            <div  class ="video-pop">
+                <iframe width="560" height="315" src="{{page.video.url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+            <button type="button" class="btn btn-primary" onclick="deixar_botao()">Deixar o video acompanhando post</button>
+          </div>
+  
+        </div>
+  
+        {% elsif page.image-intro.ligado == true %}
         <div class="col">
-          <h1 class=""> {{ page.title }}</h1>
-          <p>Os tópicos desse post são :</p>
-            <p>
-              <ul id="todos-titulos" onload="pegar_titulos()"></ul>
-            </p>
+          <img src="{{page.image-intro.url}}" class="img-fluid" alt="">
+          </div>
+        {% endif %}
+  
         </div>
-
-        {% if page.video.ligado == true %}
-        <div class="col">
-          <div  class ="video-pop">
-              <iframe width="560" height="315" src="{{page.video.url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <button type="button" class="btn btn-primary" onclick="deixar_botao()">Deixar o video acompanhando post</button>
+      </div>
+  
+    </div>
+  
+  
+  
+  
+    <div class="row">
+  
+      <div class="col-lg-9">
+        <div class="corpo-texto">
+          {{ content }}
+  
         </div>
-
+  
       </div>
-
-      {% elsif page.image-intro.ligado == true %}
-      <div class="col">
-        <img src="{{page.image-intro.url}}" class="img-fluid" alt="">
+  
+  
+  
+      <div class="col-lg-3">
+        <div class="menu-principal">
+          {% if page.seletor == 'py'  %}
+          {% include navegador.html menu = site.py %}
+          {% endif%}
+  
+          {% if page.seletor == 'git'  %}
+          {% include navegador.html menu = site.git %}
+          {% endif%}
+  
+      
         </div>
-      {% endif %}
-
       </div>
+  
+  
+  
+  
+  
     </div>
-
-  </div>
-
-
-
-
-  <div class="row">
-
-    <div class="col-lg-9">
-      <div class="corpo-texto">
-        {{ content }}
-
-      </div>
-
-    </div>
-
-
-
-    <div class="col-lg-3">
-      <div class="menu-principal">
-        {% if page.seletor == 'py'  %}
-        {% include navegador.html menu = site.py %}
-        {% endif%}
-
-        {% if page.seletor == 'git'  %}
-        {% include navegador.html menu = site.git %}
-        {% endif%}
-
-    
-      </div>
-    </div>
-
-
-
-
-
   </div>
 </div>
+  
+</section>
+
+<!-- 
+<div class="section__container">
+  <p class="section__description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quo aut dolores optio modi expedita itaque, ad enim nulla. Nesciunt voluptatum nobis, nihil asperiores labore dignissimos repellendus consectetur nostrum ad!
+  </p>
+  <p class="section__description"> 
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nobis, ipsum facilis, aut similique quo soluta dolores at corrupti temporibus, in adipisci ab minus amet explicabo eaque eum nemo debitis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae omnis quia veritatis pariatur dolores nesciunt, id enim a odio laudantium? Nobis animi non, similique assumenda cumque amet ullam possimus? 
+  </p>
+  <p class="section__description">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eligendi asperiores adipisci praesentium vel expedita quis quam sed nisi saepe. Eaque libero ad quasi, quis voluptatum ipsa repellendus consequatur nam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id, ea consectetur doloremque et cum modi maxime pariatur commodi libero earum natus ex, molestias molestiae reprehenderit debitis in suscipit est. 
+  </p>
+</div> -->
+
+
+
+
+<script src="/assets/prism.js"></script>
+
 
 
 

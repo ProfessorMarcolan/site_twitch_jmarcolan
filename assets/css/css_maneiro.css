@@ -373,7 +373,7 @@ body {
     margin: 15rem 0 1rem 0
 }
 
-.section__description {
+p {
     font-size: 1.8rem;
     display: -webkit-box;
     display: flex;
@@ -384,15 +384,26 @@ body {
     padding: 0 4rem
 }
 
-.section__description:last-child {
+/* p {
+    font-size: 1.8rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    font-weight: 500;
+    padding: 0 4rem
+} */
+
+p:last-child {
     padding-bottom: 20rem
 }
 
-.section__description:not(:last-child) {
+p:not(:last-child) {
     margin-bottom: 3rem
 }
 
-.section__description--center {
+p--center {
     text-align: center
 }
 
@@ -720,4 +731,10 @@ body {
     margin: 10rem 0 35rem 0;
     background: #161625;
     border-radius: 3px
+}
+
+.div-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
