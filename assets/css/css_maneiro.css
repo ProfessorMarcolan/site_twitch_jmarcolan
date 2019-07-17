@@ -97,7 +97,7 @@ body {
     align-items: center;
     bottom: 0;
     position: absolute;
-    width: 100%
+    width: 100%;
 }
 
 .footer__nav-list {
@@ -373,7 +373,7 @@ body {
     margin: 15rem 0 1rem 0
 }
 
-p {
+.section__description {
     font-size: 1.8rem;
     display: -webkit-box;
     display: flex;
@@ -384,26 +384,15 @@ p {
     padding: 0 4rem
 }
 
-/* p {
-    font-size: 1.8rem;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    font-weight: 500;
-    padding: 0 4rem
-} */
-
-p:last-child {
+.section__description:last-child {
     padding-bottom: 20rem
 }
 
-p:not(:last-child) {
+.section__description:not(:last-child) {
     margin-bottom: 3rem
 }
 
-p--center {
+.section__description--center {
     text-align: center
 }
 
@@ -439,19 +428,15 @@ p--center {
 
 .card-container {
     display: -webkit-box;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    margin: 0 auto;
-    width: 100%
+    width: 100%;
 }
 
-.card-container:last-child {
-    padding-bottom: 20rem
-}
+
 
 @media screen and (min-width: 1600px) {
     .card-container {
