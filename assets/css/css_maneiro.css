@@ -740,3 +740,46 @@ p--center {
 .container_flex{
     display: flex;
 }
+
+
+
+.post {
+
+}
+
+.post-title {
+    margin: 10rem 0 5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #201C2B;
+    padding: .5rem 0;
+    letter-spacing: 2px
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #201C2B;
+    box-shadow: 1px 1px 5px #201C2B;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.post-header-topics {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.post-header-video {
+    /* TODO: Verificar como deixar o tamanho do vídeo com base no tamanho da tela do usuário */
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+/* TODO: media querie para deixar o post responsivo */
