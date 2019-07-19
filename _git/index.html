@@ -1,13 +1,19 @@
 ---
-layout : layoute_pagina_principal
+layout : layout_topicos_curso
 permalink: /tag/git
 ---
 
 
+<h2 class="section__title"> Posts sobre o react</h2>
+  <div class="div-container">
 
-<h2> Posts sobre o react</h2>
+    
+    <div class="card-container div-container" id="posts_react">
 
-<div id = "posts_react"></div>
+
+
+
+
 
 
 
@@ -15,14 +21,8 @@ permalink: /tag/git
 
 
 
-componente_cartoes = new printando_na_tela( document.getElementById("posts_react"))
 
-fetch( "/git/topicos.json")
-  .then((resp) => resp.json()) // Transform the data into json
-  .then(function(data) {
-    componente_cartoes.mostra_interface(data)
-    // Create and append the li's to the ul
-    })
+    let gerente_interface = new Mostra_cards("/git/topicos.json", $("#posts_react"))
 
 
 
