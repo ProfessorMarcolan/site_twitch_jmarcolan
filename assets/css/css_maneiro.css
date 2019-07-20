@@ -733,6 +733,11 @@ p--center {
     padding: .5rem 2rem
 }
 
+.nav__link--current {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
 #twitch-embed {
     padding: .5rem;
     margin: 10rem 0 35rem 0;
