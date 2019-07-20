@@ -13,6 +13,16 @@ body {
     min-height: 100vh
 }
 
+.div_center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.img__center {
+    width: 100%;
+}
+
 .icon-wrapper {
     cursor: pointer;
     display: -webkit-box;
@@ -768,10 +778,55 @@ p--center {
     margin-bottom: 3rem;
 }
 
-.post-header-topics {
+.post-content {
+    /* Aqui tava faltando larggura do container */
+    width: 100%;
+    /* Aqui os items ficam em linha */
+    display: flex;
+    /* Aqui se os items forem maior que a box eles quebram pra linha de baixo */
+    flex-wrap: wrap;
+    border-bottom: 1px solid #201C2B;
+    box-shadow: 1px 1px 5px #201C2B;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.post-content-content{
+    width: 100%;
+    height: auto;
     margin: 0px;
     padding: 0px;
+    font-size: 1.6rem;
+    
+}
+
+.video-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 50.25%;
+    
+}
+
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.post-header-topics {
+    border: solid 1px red;
+    margin: 0;
+    padding: 0;
     list-style: none;
+    font-size: 1.6rem;
+    font-size: 1.6rem;
+    font-size: 1.6rem;
     font-size: 1.6rem;
 }
 

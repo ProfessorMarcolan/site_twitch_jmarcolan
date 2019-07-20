@@ -2,8 +2,66 @@
 layout: default
 
 ---
+<section class="section contribuir active">
 
-{{content}}
+    <!-- 
+      <h1 class="section__title">{{page.title}}</h1> 
+    -->
+  
+    <div class="section__container">
+      <article class="post">
+        <!-- Aqui o título principal - deve estar dentro do article (semântica, acessibilidade) -->
+        <h1 class="post-title">{{page.title}}</h1>
+  
+        <header class="post-header">
+          <!-- Lista de Tópicos -->
+          <ul class="post-header-topics">
+            <li>Tópico 1</li>
+            <li>Tópico 2</li>
+            <li>Tópico 3</li>
+            <li>Tópico 4</li>
+          </ul>
+  
+          <!-- Vídeo -->
+          <div class="video-container">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/zS1cLOIxsQ8"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content">
+
+            <div class="post-content-content">
+                    {{content}}
+            </div>
+    
+        </div>
+
+        <div class="post-content">
+                <ul>
+                        <li>Tópico 1</li>
+                        <li>Tópico 2</li>
+                        <li>Tópico 3</li>
+                        <li>Tópico 4</li>
+                </ul>
+                    
+            </div>
+        
+        
+      </article>
+    </div>
+
+
+    
+   
+  
+
+
+</section>
 
   
 
