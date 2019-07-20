@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
-    font-size: 10px
+    font-size: 10px;
 }
 
 body {
     position: relative;
-    min-height: 100vh
+    min-height: 100vh;
+}
+
+.div_center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.img__center {
+    width: 100%;
 }
 
 .icon-wrapper {
@@ -97,7 +107,7 @@ body {
     align-items: center;
     bottom: 0;
     position: absolute;
-    width: 100%
+    width: 100%;
 }
 
 .footer__nav-list {
@@ -384,15 +394,27 @@ body {
     padding: 0 4rem
 }
 
-.section__description:last-child {
+p {
+    font-size: 1.8rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    font-weight: 500;
+    padding: 0 4rem
+}
+
+
+p:last-child {
     padding-bottom: 20rem
 }
 
-.section__description:not(:last-child) {
+p:not(:last-child) {
     margin-bottom: 3rem
 }
 
-.section__description--center {
+p--center {
     text-align: center
 }
 
@@ -428,19 +450,15 @@ body {
 
 .card-container {
     display: -webkit-box;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    margin: 0 auto;
-    width: 100%
+    width: 100%;
 }
 
-.card-container:last-child {
-    padding-bottom: 20rem
-}
+
 
 @media screen and (min-width: 1600px) {
     .card-container {
@@ -726,3 +744,102 @@ body {
     background: #161625;
     border-radius: 3px
 }
+
+.div-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.container_flex{
+    display: flex;
+}
+
+
+
+.post {
+
+}
+
+.post-title {
+    margin: 10rem 0 5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #201C2B;
+    padding: .5rem 0;
+    letter-spacing: 2px
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #201C2B;
+    box-shadow: 1px 1px 5px #201C2B;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.post-content {
+    /* Aqui tava faltando larggura do container */
+    width: 100%;
+    /* Aqui os items ficam em linha */
+    display: flex;
+    /* Aqui se os items forem maior que a box eles quebram pra linha de baixo */
+    flex-wrap: wrap;
+    border-bottom: 1px solid #201C2B;
+    box-shadow: 1px 1px 5px #201C2B;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.post-content-content{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.6rem;
+    
+}
+
+.video-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 50.25%;
+    
+}
+
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.post-header-topics {
+    border: solid 1px red;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.6rem;
+    font-size: 1.6rem;
+    font-size: 1.6rem;
+    font-size: 1.6rem;
+}
+
+.post-header-video {
+    /* TODO: Verificar como deixar o tamanho do vídeo com base no tamanho da tela do usuário */
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+/* TODO: media querie para deixar o post responsivo */

@@ -1,8 +1,20 @@
 ---
-layout: page
-title: Cursos
-# permalink: /cursos/
+layout: layout_topicos_curso
+permalink: cursos
 ---
-<br><br>
-<h2>{{page.title}}</h2>
-<h3>  arquivo 'cursos.html' </h3>
+
+<h2 class="section__title"> Cursos do site </h2>
+
+<div style="width: 100%; display: flex; flex-direction: row; justify-content: center">
+
+  <div id="posts_react">
+
+  </div>
+</div>
+
+<script>
+
+  new Mostra_cards("/topicos.json", $("#posts_react"))
+
+
+</script>

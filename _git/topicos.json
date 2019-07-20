@@ -1,49 +1,35 @@
 [
     {
         "id": 1,
-        "post": "como instalar o git e o tortoise git no computador",
-        "imagem_front": "",
-        "url": "como_instalar_git",
+        "post_title": "Controladores de versão",
+        "post_des": "Como utilizar controladores de verção",
+        "imagem_front": "/git/1-controladores-de-versao/imagem_inicial.png",
+        "url": "/controladores-de-versao",
         "seo": ["git","github","como instalar o git"]
     },
+
     {
         "id": 2,
-        "post": "como criar um repositório de trabalho eas ferramentas iniciais (commit, branch, merge)",
-        "exercicio": "projeto: crie um poema ?",
-        "imagem_front": "",
-        "url": "oi_mundo",
+        "post_title": "Instalando o tortoise",
+        "post_des": "O tortoiseGit é um controlador de versão baseado no TortoiseSVN para Windows.",
+        "imagem_front": "/git/2-tutorial-para-a-instalacao-do-tortoisegit/imagem_inicial.png",
+        "url": "/tutorial-para-a-instalacao-do-tortoisegit",
         "seo": ["git","github","como instalar o git"]
     },
     {
         "id": 3,
-        "post": "como criar um repositório de compartilhamento e usar as ferrmanteas iniciais (push , pull)",
-        "exercicio": "projeto/exercicio",
-        "imagem_front": "",
-        "url": "oi_mundo",
+        "post_title": "Exibindo histórico de versioanmento",
+        "post_des": "Como exibir histórico de versionamneto do tortoise",
+        "imagem_front": "/git/3-usar-o-log-do-git-mostrar-historico-de-versionamento-tortoisegit/imagem_inicial.png",
+        "url": "/exibindo-historico-de-versioanmento",
         "seo": ["git","github","como instalar o git"]
     },
     {
         "id": 4,
-        "post": "como criar um repositório de compartilhamento no github e fluxo simplificado",
-        "exercicio": "projeto/exercicio",
-        "imagem_front": "",
-        "url": "oi_mundo",
-        "seo": ["git","github","como instalar o git"]
-    },
-    {
-        "id": 5,
-        "post": "como contribuir em um repositório no github que não é seu",
-        "exercicio": "projeto/exercicio",
-        "imagem_front": "",
-        "url": "oi_mundo",
-        "seo": ["git","github","como instalar o git"]
-    },
-    {
-        "id": 6,
-        "post": "como instalar o git e o tortoise git no computador",
-        "exercicio": "projeto/exercicio",
-        "imagem_front": "",
-        "url": "como_instalar_git",
+        "post_title": "Utilizando o comando commit",
+        "post_des": "Como utilizar o comando 'commit' com o tortoise",
+        "imagem_front": "/git/4-utilizando-comando-commit-do-git-usando-tortoisegit/imagem_inicial.png",
+        "url": "/utilizando-comando-commit",
         "seo": ["git","github","como instalar o git"]
     }
 ]

@@ -1,44 +1,33 @@
 ---
-layout : layoute_pagina_principal
+layout : layout_topicos_curso
 permalink: /tag/javascript
 ---
 
 
+<h2 class="section__title"> Posts sobre o Python </h2>
+<div class="div-container">
 
-<h2> Posts sobre o react</h2>
+  <div class="card-container div-container" id="posts_react">
+    </div>
+  </div>
 
-<div id = "posts_react"></div>
 
 
-<h2> Posts sobre o javascript vanila</h2>
+  <h2 class="section__title"> Posts sobre o Python </h2>
+  <div class="div-container">
 
-<div id = "post_vanila"></div>
-
+    <div class="card-container div-container" id="post_vanila">
+      
+      </div>
+    </div>
+    
 
 <script>
 
+let gerente_interface = new Mostra_cards("/js/react/topicos.json", $("#posts_react"))
+let gerente_interface1 = new Mostra_cards("/js/vanila/topicos.json", $("#post_vanila"))
 
 
-componente_cartoes = new printando_na_tela( document.getElementById("posts_react"))
-
-fetch( "/js/react/topicos.json")
-  .then((resp) => resp.json()) // Transform the data into json
-  .then(function(data) {
-    componente_cartoes.mostra_interface(data)
-    // Create and append the li's to the ul
-    })
-
-
-    componente_cartoes_vanila = new printando_na_tela( document.getElementById("post_vanila"))
-
-fetch( "/js/vanila/topicos.json")
-  .then((resp) => resp.json()) // Transform the data into json
-  .then(function(data) {
-    componente_cartoes_vanila.mostra_interface(data)
-    // Create and append the li's to the ul
-    })
-
-    
 
 
 

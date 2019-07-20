@@ -1,14 +1,13 @@
 [
     {
         "id": 1,
-        "post_title": "Atom",
+        "post_title": "Python como fazer webscraping",
         "post_des": "como criar variaveis, tipos de variavies",
-        "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
+        "imagem_front": "/py/1-atom-ide-para-python-gratis/imagem_inicial.jpg",
         "url": "/atom-ide-para-python-gratis",
         "seo": ["git","github","como instalar o git"]
     }
 
 
+
 ]
-
-

@@ -1,52 +1,13 @@
 [
     {
         "id": 1,
-        "post": "como criar variaveis, tipos de variavies",
-        "imagem_front": "",
-        "url": "como_instalar_git",
+        "post_title": "Atom",
+        "post_des": "como criar variaveis, tipos de variavies",
+        "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
+        "url": "/atom-ide-para-python-gratis",
         "seo": ["git","github","como instalar o git"]
-    },
-    {
-        "id": 2,
-        "post": "controladors de fluxo",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-    {
-        "id": 3,
-        "post": "funções, funções  anonimas, funções setas",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-    {
-        "id": 4,
-        "post": "passando parametros para funções",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-    {
-        "id": 4,
-        "post": "paradigma da orientação a objetos (classe, herança, polimorfinsmo,encapsulamento)",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-    {
-        "id": 6,
-        "post": "paradigma orientado a eventos",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-    {
-        "id": 6,
-        "post": "funções assincronas",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-     {
-        "id": 6,
-        "post": "promissess",
-        "imagem_front": "",
-        "url": "oi_mundo"
     }
+
+
 ]
 

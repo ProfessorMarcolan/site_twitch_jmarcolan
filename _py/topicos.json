@@ -1,6 +1,23 @@
 [
     {
         "id": 1,
+        "post_title": "Atom",
+        "post_des": "como criar variaveis, tipos de variavies",
+        "imagem_front": "/py/1-atom-ide-para-python-gratis/imagem_inicial.jpg",
+        "url": "/atom-ide-para-python-gratis",
+        "seo": ["git","github","como instalar o git"]
+    },
+
+    {
+        "id": 3,
+        "post_title": "Encapsulamento do python",
+        "post_des": "Encapsulamento do pythgon",
+        "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
+        "url": "/encapsulamento-em-python",
+        "seo": ["git","github","como instalar o git"]
+    },
+    {
+        "id": 4,
         "post_title": "Como construir o git",
         "post_des": "como criar variaveis, tipos de variavies",
         "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
@@ -8,13 +25,7 @@
         "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 2,
-        "post": "controladors de fluxo",
-        "imagem_front": "",
-        "url": "oi_mundo"
-    },
-    {
-        "id": 1,
+        "id": 5,
         "post_title": "Como construir o git",
         "post_des": "como criar variaveis, tipos de variavies",
         "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
@@ -22,7 +33,7 @@
         "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 1,
+        "id": 6,
         "post_title": "Como construir o git",
         "post_des": "como criar variaveis, tipos de variavies",
         "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
@@ -30,7 +41,7 @@
         "seo": ["git","github","como instalar o git"]
     },
     {
-        "id": 1,
+        "id": 7,
         "post_title": "Como construir o git",
         "post_des": "como criar variaveis, tipos de variavies",
         "imagem_front": "/py/8-polimorfismo-em-python/imagem_inicial.png",
