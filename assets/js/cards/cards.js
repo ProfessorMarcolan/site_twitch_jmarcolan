@@ -1,20 +1,22 @@
 /**
- * quadratos vc tem que sentar com nos e conversar sobre como programa assim um dia :D
- * ashduhusahuhdusa
- * FLOW:
+ * Little docs to don't forget about what i wrote:
  * 
- * @tagAnchorProvider -> 
- *    @appendCards receives cards from @makeCards -> (builded with @makeCards) ->
+ * @begin
+ *  @tagAnchorProvider -> 
+ *    @structureCards -> 
+ *      @appendCards receives cards from @makeCards builded with iterations over @makeCard && @appendRedirectBehavior
+ * @end
+ * 
  *        
  */
 
 /**
- * @function tagAnchorProviders
+ * @function tagAnchorProvider
  * 
  * @returns {undefined}
  */
 export const tagAnchorProvider = (tagAnchor) => (cards) => {
-  return appendCards(cards, tagAnchor);
+  return structureCards(cards, tagAnchor);
 };
 
 /**
@@ -80,24 +82,13 @@ export const appendCards = (cards, tagAnchor) => {
 };
 
 /**
- * @function structureElement
+ * @function structureCards
  * 
  * @param {String}
  */
-export const structureElement(element) {
-    // Assign the passed element to a class variable.
-    this.element = element;
-    
+export const structureCards = (cards) => {
     // Extract the post title and the post description from the element.
     const  { post_title, post_des } = element;
-
-    // Populate the array of cards.
-    const cards = [
-      {
-        title: post_title,
-        description: post_des
-      }
-    ];
 
     // Everytime a user clicks on a element, redirect him to the element inner
     // URL.
