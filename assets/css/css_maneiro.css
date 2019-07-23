@@ -157,16 +157,13 @@ body {
 }
 
 .header {
-    height: 5.5rem;
-    position: fixed;
     background: #fff;
-    top: 0;
     width: 100vw;
-    z-index: 2;
     border-bottom: 1px solid #201C2B;
     box-shadow: 1px 1px 5px #201C2B;
     -webkit-transition: all .3s;
-    transition: all .3s
+    transition: all .3s;
+    padding: 10px 0;
 }
 
 .header__container {
@@ -393,16 +390,24 @@ body {
     font-weight: 500;
     padding: 0 4rem
 }
+/* mechendo no formato do texto  */
+
+h2{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 p {
+    font-family: Raleway,sans-serif;
     font-size: 1.8rem;
     display: -webkit-box;
-    display: flex;
+    text-align: justify;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: column;
     font-weight: 500;
-    padding: 0 4rem
+    margin-bottom: 5px;
+    /* padding: 0 4rem */
 }
 
 
@@ -862,3 +867,13 @@ p--center {
 }
 
 /* TODO: media querie para deixar o post responsivo */
+
+img { width: 100%; height: auto; }
+
+
+ul {
+    list-style: none;
+    font-family: Raleway,sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
