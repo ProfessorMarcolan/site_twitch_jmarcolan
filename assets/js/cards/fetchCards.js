@@ -17,4 +17,3 @@ export const fetchData = (url, pageElements) => {
     } catch (err) {
         // IMAGINE AN ERROR HANDLING HERE.
     }
-};

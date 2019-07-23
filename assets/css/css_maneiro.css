@@ -157,16 +157,13 @@ body {
 }
 
 .header {
-    height: 5.5rem;
-    position: fixed;
     background: #fff;
-    top: 0;
     width: 100vw;
-    z-index: 2;
     border-bottom: 1px solid #201C2B;
     box-shadow: 1px 1px 5px #201C2B;
     -webkit-transition: all .3s;
-    transition: all .3s
+    transition: all .3s;
+    padding: 10px 0;
 }
 
 .header__container {
@@ -393,16 +390,24 @@ body {
     font-weight: 500;
     padding: 0 4rem
 }
+/* mechendo no formato do texto  */
+
+h2{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 p {
+    font-family: Raleway,sans-serif;
     font-size: 1.8rem;
     display: -webkit-box;
-    display: flex;
+    text-align: justify;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: column;
     font-weight: 500;
-    padding: 0 4rem
+    margin-bottom: 5px;
+    /* padding: 0 4rem */
 }
 
 
@@ -733,11 +738,6 @@ p--center {
     padding: .5rem 2rem
 }
 
-.nav__link--current {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
 #twitch-embed {
     padding: .5rem;
     margin: 10rem 0 35rem 0;
@@ -751,12 +751,9 @@ p--center {
     flex-wrap: wrap;
 }
 
-
 .container_flex{
     display: flex;
 }
-
-
 
 .post {
 
@@ -775,7 +772,9 @@ p--center {
 
 .post-header {
     display: flex;
-    justify-content: space-around;
+    
+    justify-content: space-between;
+   
     align-items: center;
     border-bottom: 1px solid #201C2B;
     box-shadow: 1px 1px 5px #201C2B;
@@ -789,25 +788,50 @@ p--center {
     /* Aqui os items ficam em linha */
     display: flex;
     /* Aqui se os items forem maior que a box eles quebram pra linha de baixo */
-    flex-wrap: wrap;
-    border-bottom: 1px solid #201C2B;
-    box-shadow: 1px 1px 5px #201C2B;
-    padding: 20px;
-    margin-bottom: 3rem;
+
+    justify-content: space-between;
+    
+    
+    
 }
 
+.post-content:not(:last-child){ margin-right: 10px}
+
 .post-content-content{
+    
+    flex: 3;
     width: 100%;
     height: auto;
     margin: 0px;
     padding: 0px;
     font-size: 1.6rem;
+    border-bottom: 1px solid #201C2B;
+    box-shadow: 1px 1px 5px #201C2B;
+    padding: 20px;
+    margin-bottom: 3rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+.post-content-navegador{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #201C2B;
+    box-shadow: 1px 1px 5px #201C2B;
+    padding: 20px;
+    margin-bottom: 3rem;
     
 }
 
 .video-container {
     max-width: 700px;
-    margin: auto;
+    
 }
 
 .video {
@@ -843,3 +867,13 @@ p--center {
 }
 
 /* TODO: media querie para deixar o post responsivo */
+
+img { width: 100%; height: auto; }
+
+
+ul {
+    list-style: none;
+    font-family: Raleway,sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
